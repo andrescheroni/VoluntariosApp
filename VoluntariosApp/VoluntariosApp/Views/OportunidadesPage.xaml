@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoluntariosApp.Views.OportunidadesPage"
+             xmlns:helpers="clr-namespace:VoluntariosApp.Helpers"
+             xmlns:viewmodels="clr-namespace:VoluntariosApp.ViewModels"
+             xmlns:converters="clr-namespace:VoluntariosApp.Converters"
+             x:DataType="viewmodels:OportunidadesViewModel">
+
+    <ContentPage.BindingContext>
+        <viewmodels:OportunidadesViewModel/>        
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <converters:SelectedIndexColorConverter x:Key="SelectedIndexColorConverter" />
+    </ContentPage.Resources>
+    
+    <Grid RowDefinitions="Auto,Auto,*">        
+        <Grid ColumnDefinitions="*,Auto,*" BackgroundColor="White">
+            <Label            
+            Grid.Row="0"
+            Grid.Column="1"
+            Margin="16,5"                        
+            Text="Mis oportunidades"
+            TextColor="{StaticResource TextPrimary}"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="Title"/>
+            <Label            
+            Grid.Row="0"
+            Grid.Column="2"
+            Margin="10,10"
+            FontFamily="FASolid"
+            Text="{x:Static helpers:FAIcons.Plus}"
+            TextColor="{StaticResource TextPrimary}"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            FontSize="Title"/>
+        </Grid>
+        
+        <Grid ColumnDefinitions="*,*">
+            <StackLayout Grid.Row="1" Grid.Column="0">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding SelectedCategoryCommand}"
+                        CommandParameter="0"/>
+                </StackLayout.GestureRecognizers> 
+                <Label                
+                Margin="10,8"
+                Text="Activas"                
+                HorizontalOptions="Center"            
+                FontSize="Medium"
+                TextColor="{Binding SelectedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='0'}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Command="{Binding SelectedCategoryCommand}"
+                        CommandParameter="1"/>
+                </StackLayout.GestureRecognizers>
+                <Label                
+                Margin="10,8"
+                Text="Finalizadas"                
+                HorizontalOptions="Center"            
+                FontSize="Medium"
+                TextColor="{Binding SelectedCategoryIndex, Converter={StaticResource SelectedIndexColorConverter}, ConverterParameter='1'}"/>
+            </StackLayout>
+        </Grid>
+        
+        <CollectionView Grid.Row="2" BackgroundColor="{StaticResource Background}">
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Item One</x:String>
+                    <x:String>Item Two</x:String>
+                    <x:String>Item Three</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10,10">
+                        <Frame
+                            HasShadow="True"
+                            Padding="10"
+                            BackgroundColor="{StaticResource CardBackground}"
+                            CornerRadius="10">
+                            <Grid RowDefinitions="*,Auto,Auto">
+                                <BoxView BackgroundColor="Black" HeightRequest="300"/>
+                                <Label
+                                    Grid.Row="1"
+                                    Text="Comedor Infantil Sonrisas"
+                                    FontSize="Large"
+                                    FontAttributes="Bold"
+                                    TextColor="{StaticResource TextPrimary}"/>
+                                <Label
+                                    Grid.Row="2"
+                                    FontSize="Medium"
+                                    Text="Sumate a nosotros para darle un día espectacular a los chicos y regalarles miles de sonrisas."/>
+                            </Grid>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
