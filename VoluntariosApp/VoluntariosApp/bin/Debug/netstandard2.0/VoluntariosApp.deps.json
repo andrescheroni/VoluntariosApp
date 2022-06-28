@@ -14,18 +14,16 @@
           "Newtonsoft.Json": "12.0.3",
           "Refractored.MvvmHelpers": "1.6.2",
           "Resizetizer.NT": "0.2.0",
-          "Sharpnado.MaterialFrame": "1.3.0",
-          "Sharpnado.Tabs": "2.2.0",
+          "Sharpnado.MaterialFrame": "1.1.3",
+          "Xamarin.CommunityToolkit": "1.0.1",
           "Xamarin.Essentials": "1.6.1",
-          "Xamarin.Forms": "5.0.0.2012",
-          "Xamarin.Forms.PancakeView": "2.3.0.759"
+          "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "VoluntariosApp.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
-      "Microsoft.NETCore.Targets/1.1.0": {},
       "MonkeyCache/1.5.1": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
@@ -75,47 +73,14 @@
         }
       },
       "Resizetizer.NT/0.2.0": {},
-      "Sharpnado.MaterialFrame/1.3.0": {
+      "Sharpnado.MaterialFrame/1.1.3": {
         "dependencies": {
           "Xamarin.Forms": "5.0.0.2012"
         },
         "runtime": {
           "lib/netstandard2.0/Sharpnado.MaterialFrame.dll": {
-            "assemblyVersion": "1.3.0.0",
-            "fileVersion": "1.3.0.0"
-          }
-        }
-      },
-      "Sharpnado.Shadows/1.2.0": {
-        "dependencies": {
-          "ThomasLevesque.WeakEvent": "4.1.0",
-          "Xamarin.Forms": "5.0.0.2012"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Sharpnado.Shadows.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "1.2.0.0"
-          }
-        }
-      },
-      "Sharpnado.Tabs/2.2.0": {
-        "dependencies": {
-          "Sharpnado.Shadows": "1.2.0",
-          "Sharpnado.TaskMonitor": "1.0.2",
-          "Xamarin.Forms": "5.0.0.2012"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Sharpnado.Tabs.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.0"
-          }
-        }
-      },
-      "Sharpnado.TaskMonitor/1.0.2": {
-        "runtime": {
-          "lib/netstandard2.0/Sharpnado.TaskMonitor.dll": {
-            "assemblyVersion": "1.0.2.0",
-            "fileVersion": "1.0.2.0"
+            "assemblyVersion": "1.1.3.0",
+            "fileVersion": "1.1.3.0"
           }
         }
       },
@@ -174,22 +139,11 @@
           }
         }
       },
-      "System.ComponentModel/4.3.0": {
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.ComponentModel.dll": {
-            "assemblyVersion": "4.0.2.0",
-            "fileVersion": "4.6.24705.1"
-          }
-        }
-      },
       "System.Memory/4.5.3": {
         "dependencies": {
           "System.Buffers": "4.4.0",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.dll": {
@@ -206,26 +160,55 @@
           }
         }
       },
-      "System.Runtime/4.3.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
+      "System.Reflection.Emit.ILGeneration/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "System.Reflection.Emit.Lightweight/4.7.0": {
+        "dependencies": {
+          "System.Reflection.Emit.ILGeneration": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "assemblyVersion": "4.0.4.1",
-            "fileVersion": "4.6.26919.2"
+            "fileVersion": "4.6.28619.1"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "4.2.0.1",
+            "fileVersion": "4.6.28619.1"
           }
         }
       },
       "System.ValueTuple/4.5.0": {},
-      "ThomasLevesque.WeakEvent/4.1.0": {
+      "Xamarin.CommunityToolkit/1.0.1": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.7.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
         "runtime": {
-          "lib/netstandard2.0/WeakEvent.dll": {
-            "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.1.0.0"
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -255,18 +238,6 @@
             "fileVersion": "5.0.0.671"
           }
         }
-      },
-      "Xamarin.Forms.PancakeView/2.3.0.759": {
-        "dependencies": {
-          "System.ComponentModel": "4.3.0",
-          "Xamarin.Forms": "5.0.0.2012"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {
-            "assemblyVersion": "2.0.1.0",
-            "fileVersion": "2.0.1.0"
-          }
-        }
       }
     }
   },
@@ -282,13 +253,6 @@
       "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
-    },
-    "Microsoft.NETCore.Targets/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
-      "path": "microsoft.netcore.targets/1.1.0",
-      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
     "MonkeyCache/1.5.1": {
       "type": "package",
@@ -332,33 +296,12 @@
       "path": "resizetizer.nt/0.2.0",
       "hashPath": "resizetizer.nt.0.2.0.nupkg.sha512"
     },
-    "Sharpnado.MaterialFrame/1.3.0": {
+    "Sharpnado.MaterialFrame/1.1.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uj2qykF4DM8TihMgv0YPfFD7+Jkz3cEWNrEKDlJ5j/v7mTZZ30Pc3Z4lHmk+mhLDBRQiePvvgXqby+KpmJkm3Q==",
-      "path": "sharpnado.materialframe/1.3.0",
-      "hashPath": "sharpnado.materialframe.1.3.0.nupkg.sha512"
-    },
-    "Sharpnado.Shadows/1.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-zjHTh6pZXpGb0viQ5wL5XtFrQNA5xeNzkveVAJvH8x7HLFRnUIXaJ6QzbUfeAdAL2nEAJSffcaeE3wQP6a6m0g==",
-      "path": "sharpnado.shadows/1.2.0",
-      "hashPath": "sharpnado.shadows.1.2.0.nupkg.sha512"
-    },
-    "Sharpnado.Tabs/2.2.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kL5b7TkxY22kS3MXIFzUV+Fy/hc/7Ub8iJFens4OuDslRhHsxuurn8zMVdV5rlYxhLQjW/rZhS3UUKnt3mfnQg==",
-      "path": "sharpnado.tabs/2.2.0",
-      "hashPath": "sharpnado.tabs.2.2.0.nupkg.sha512"
-    },
-    "Sharpnado.TaskMonitor/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-2BRJrhgpnFocTM8lKuKX13c3dv3CoUavFO/+N97DdiSCH69sZ8IPRB1DwdOGI0mOJzmQqoIoSDn23mNi7Ay8QA==",
-      "path": "sharpnado.taskmonitor/1.0.2",
-      "hashPath": "sharpnado.taskmonitor.1.0.2.nupkg.sha512"
+      "sha512": "sha512-/hzzwE3sEPmdkplTB6EVwbFwJZ6mUwBDmipwaBqO2vKj7JjUUliBghrM/oAE+tVT8F01O1hPOLwMiashdsoBOQ==",
+      "path": "sharpnado.materialframe/1.1.3",
+      "hashPath": "sharpnado.materialframe.1.1.3.nupkg.sha512"
     },
     "sqlite-net-pcl/1.7.335": {
       "type": "package",
@@ -402,13 +345,6 @@
       "path": "system.buffers/4.4.0",
       "hashPath": "system.buffers.4.4.0.nupkg.sha512"
     },
-    "System.ComponentModel/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
-      "path": "system.componentmodel/4.3.0",
-      "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
-    },
     "System.Memory/4.5.3": {
       "type": "package",
       "serviceable": true,
@@ -423,19 +359,33 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
-    "System.Runtime/4.3.0": {
+    "System.Reflection.Emit.ILGeneration/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
-      "path": "system.runtime/4.3.0",
-      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+      "sha512": "sha512-AucBYo3DSI0IDxdUjKksBcQJXPHyoPyrCXYURW1WDsLI4M65Ar/goSHjdnHOAY9MiYDNKqDlIgaYm+zL2hA1KA==",
+      "path": "system.reflection.emit.ilgeneration/4.7.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512"
     },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+    "System.Reflection.Emit.Lightweight/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+      "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
+      "path": "system.reflection.emit.lightweight/4.7.0",
+      "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "System.ValueTuple/4.5.0": {
       "type": "package",
@@ -444,12 +394,12 @@
       "path": "system.valuetuple/4.5.0",
       "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
-    "ThomasLevesque.WeakEvent/4.1.0": {
+    "Xamarin.CommunityToolkit/1.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mcp8UoYXWvPmud7UJmREULQLxLmX6SYet2pyZUHpcmIiku3JoqEilPUu9QeUZrV7fOCp0Pfva/VDhG+n3afGyg==",
-      "path": "thomaslevesque.weakevent/4.1.0",
-      "hashPath": "thomaslevesque.weakevent.4.1.0.nupkg.sha512"
+      "sha512": "sha512-Tn+hASKMbpHywJLGDJcmF/AywvPGEO8/iUR+zaETLqFDy1ZqI/07Ur5Mcd7tcMLKA8Ff7SbDCpasC5LnAwyJAw==",
+      "path": "xamarin.communitytoolkit/1.0.1",
+      "hashPath": "xamarin.communitytoolkit.1.0.1.nupkg.sha512"
     },
     "Xamarin.Essentials/1.6.1": {
       "type": "package",
@@ -464,13 +414,6 @@
       "sha512": "sha512-Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
       "path": "xamarin.forms/5.0.0.2012",
       "hashPath": "xamarin.forms.5.0.0.2012.nupkg.sha512"
-    },
-    "Xamarin.Forms.PancakeView/2.3.0.759": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-TGVsLJuGd/PKlyhmcBxZnHhHqyhYppzyrdb2q/sy+S6dQYkeGM8A+HmIIHVhbi7r8Sjasa/HRBkOmTSYQOZzhQ==",
-      "path": "xamarin.forms.pancakeview/2.3.0.759",
-      "hashPath": "xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
     }
   }
 }

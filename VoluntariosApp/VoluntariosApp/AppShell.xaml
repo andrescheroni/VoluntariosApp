@@ -32,14 +32,14 @@
 
     <TabBar>
         <Tab Title="Oportunidades"
-             Route="OportunidadesPage"
-             Shell.NavBarIsVisible="False"
-             >
+             Route="OportunidadesPage"             
+             Shell.NavBarIsVisible="False"             
+             >            
             <Tab.Icon>
                 <FontImageSource FontFamily="FASolid"
                                      Glyph="{x:Static helpers:FAIcons.HandsHoldingCircle}"/>
             </Tab.Icon>
-            <ShellContent            
+            <ShellContent                            
             ContentTemplate="{DataTemplate local:OportunidadesPage}">
             </ShellContent>
         </Tab>

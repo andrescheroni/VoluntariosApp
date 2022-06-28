@@ -1,10 +1,9 @@
-C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\VoluntariosApp.deps.json
-C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\VoluntariosApp.dll
-C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\ref\VoluntariosApp.dll
-C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\VoluntariosApp.pdb
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.csproj.AssemblyReference.cache
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\Controls\OportunidadesActivasControl.xaml.g.cs
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\Controls\OportunidadesFinalizadasControl.xaml.g.cs
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\Views\AcercaDePage.xaml.g.cs
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\Views\NuevaOportunidadPage.xaml.g.cs
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\Views\OportunidadesPage.xaml.g.cs
@@ -16,8 +15,11 @@ C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstanda
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.AssemblyInfoInputs.cache
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.AssemblyInfo.cs
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.csproj.CoreCompileInputs.cache
-C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.dll
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\ref\VoluntariosApp.dll
 C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.pdb
-C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\VoluntariosApp.csproj.AssemblyReference.cache
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\VoluntariosApp.deps.json
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\VoluntariosApp.dll
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\ref\VoluntariosApp.dll
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\bin\Debug\netstandard2.0\VoluntariosApp.pdb
+C:\Source\Repos\VoluntariosApp\VoluntariosApp\VoluntariosApp\obj\Debug\netstandard2.0\XamlC.stamp

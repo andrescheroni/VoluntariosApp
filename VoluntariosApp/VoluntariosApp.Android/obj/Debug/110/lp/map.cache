@@ -2,8 +2,6 @@ FormsViewGroup.dll
 MonkeyCache.dll
 MonkeyCache.SQLite.dll
 Sharpnado.MaterialFrame.Android.dll
-Sharpnado.Shadows.Android.dll
-Sharpnado.Tabs.Android.dll
 SQLitePCLRaw.lib.e_sqlite3.android.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll
@@ -50,8 +48,8 @@ Xamarin.AndroidX.VectorDrawable.dll
 Xamarin.AndroidX.VersionedParcelable.dll
 Xamarin.AndroidX.ViewPager.dll
 Xamarin.AndroidX.ViewPager2.dll
+Xamarin.CommunityToolkit.dll
 Xamarin.Essentials.dll
-Xamarin.Forms.PancakeView.dll
 Xamarin.Forms.Platform.Android.dll
 Xamarin.Forms.Platform.dll
 Xamarin.Google.Android.Material.dll

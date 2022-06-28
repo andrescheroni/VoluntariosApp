@@ -8,9 +8,11 @@
         <Grid RowDefinitions="Auto,Auto" BackgroundColor="White">
             <Label            
                 Grid.Row="0"            
-                Margin="16,0"                        
+                Margin="16,10"                        
                 Text="Gestionar Postulaciones"
                 TextColor="{StaticResource TextPrimary}"
+                FontFamily="MonReg"
+                VerticalOptions="Center"
                 HorizontalOptions="Center"
                 FontAttributes="Bold"
                 FontSize="Title"/>
@@ -19,7 +21,9 @@
                 Margin="16,0"   
                 TextColor="{StaticResource TextPrimary}"
                 HorizontalOptions="Center"
+                VerticalOptions="Center"
                 FontSize="Medium"
+                FontFamily="MonRegIt"
                 Title="Elija una Oportunidad"
                 ItemsSource="{Binding OportunidadesActivasList}"
                 SelectedItem="{Binding SelectedColorName, Mode=TwoWay}" />
@@ -28,9 +32,10 @@
             <Label            
                 Grid.Column="0"
                 Grid.Row="2"            
-                Margin="16,0"                        
+                Margin="16,10"                        
                 Text="Solo pendientes"
                 TextColor="{StaticResource TextPrimary}"
+                FontFamily="MonReg"
                 HorizontalOptions="Center"            
                 VerticalOptions="Center"
                 FontSize="Medium"/>
@@ -75,6 +80,7 @@
                         <Label
                             Grid.Column="1"
                             Text="Luisa Lagos"
+                            FontFamily="MonReg"
                             FontSize="Large"                            
                             VerticalOptions="Center"
                             HorizontalOptions="Center"
@@ -90,6 +96,7 @@
                         <Label
                             Grid.Column="3"
                             Text="Aceptada"
+                            FontFamily="MonRegIt"
                             FontSize="Large"
                             FontAttributes="Bold"
                             VerticalOptions="Center"
