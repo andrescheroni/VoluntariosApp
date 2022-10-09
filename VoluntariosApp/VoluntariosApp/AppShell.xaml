@@ -2,7 +2,9 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:VoluntariosApp.Views"
+       xmlns:common="clr-namespace:VoluntariosApp.Views.Common"
        xmlns:helpers="clr-namespace:VoluntariosApp.Helpers"
+       xmlns:organizacion="clr-namespace:VoluntariosApp.Views.Organizacion"       
        Title="VoluntariosApp"
        x:Class="VoluntariosApp.AppShell">
 
@@ -15,11 +17,11 @@
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Background}" />                
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.BackgroundColor" Value="#FFFEFF" />                
+                <Setter Property="Shell.ForegroundColor" Value="Black" />
+                <Setter Property="Shell.TitleColor" Value="Black" />
                 <Setter Property="Shell.DisabledColor" Value="White" />
-                <Setter Property="Shell.UnselectedColor" Value="{StaticResource TabIconUnSelected}" />
+                <Setter Property="Shell.UnselectedColor" Value="#B4B4BA" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource TabBarBackground}" />                
                 <Setter Property="Shell.TabBarForegroundColor" Value="{StaticResource TabIconSelected}"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="{StaticResource TabIconUnSelected}"/>
@@ -30,6 +32,10 @@
         </ResourceDictionary>
     </Shell.Resources>
 
+    <ShellItem Route="LoginPage">
+        <ShellContent ContentTemplate="{DataTemplate common:LoginPage}"/>
+    </ShellItem>
+    
     <TabBar>
         <Tab Title="Oportunidades"
              Route="OportunidadesPage"             
@@ -40,7 +46,7 @@
                                      Glyph="{x:Static helpers:FAIcons.HandsHoldingCircle}"/>
             </Tab.Icon>
             <ShellContent                            
-            ContentTemplate="{DataTemplate local:OportunidadesPage}">
+            ContentTemplate="{DataTemplate organizacion:OportunidadesPage}">
             </ShellContent>
         </Tab>
         <Tab Title="Postulaciones"
@@ -52,20 +58,27 @@
                                      Glyph="{x:Static helpers:FAIcons.HandshakeAngle}"/>
             </Tab.Icon>
             <ShellContent            
-            ContentTemplate="{DataTemplate local:PostulacionesPage}">
+            ContentTemplate="{DataTemplate organizacion:PostulacionesPage}">
             </ShellContent>
         </Tab>
         <Tab Title="Mi Cuenta"
              Route="PerfilPage"
-             Shell.NavBarIsVisible="False"
+             Shell.NavBarIsVisible="True"             
              >
             <Tab.Icon>
                 <FontImageSource FontFamily="FASolid"
                                      Glyph="{x:Static helpers:FAIcons.User}"/>
             </Tab.Icon>
             <ShellContent            
-            ContentTemplate="{DataTemplate local:PerfilPage}">
+                Title="General"                       
+                ContentTemplate="{DataTemplate organizacion:PerfilGeneralPage}">
             </ShellContent>
+            <!-- 
+            <ShellContent            
+                Title="Preferencias"
+                ContentTemplate="{DataTemplate organizacion:PerfilPreferenciasPage}">
+            </ShellContent>
+            -->
         </Tab>
         <Tab Title="Acerca de..."
              Route="AcercaDePage"
@@ -76,7 +89,7 @@
                                      Glyph="{x:Static helpers:FAIcons.Ellipsis}"/>
             </Tab.Icon>
             <ShellContent            
-            ContentTemplate="{DataTemplate local:AcercaDePage}">
+            ContentTemplate="{DataTemplate common:AcercaDePage}">
             </ShellContent>
         </Tab>
     </TabBar>

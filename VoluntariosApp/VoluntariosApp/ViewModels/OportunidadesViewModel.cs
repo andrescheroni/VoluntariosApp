@@ -1,8 +1,5 @@
 ﻿using MvvmHelpers;
 using MvvmHelpers.Commands;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace VoluntariosApp.ViewModels
 {
@@ -24,7 +21,7 @@ namespace VoluntariosApp.ViewModels
 
         void OnSelectCategory(string index)
         {
-            if(int.TryParse(index,out int i))
+            if (int.TryParse(index, out int i))
             {
                 SelectedCategoryIndex = i;
             }

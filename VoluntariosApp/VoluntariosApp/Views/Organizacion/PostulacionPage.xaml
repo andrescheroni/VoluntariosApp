@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoluntariosApp.Views.Organizacion.PostulacionPage"
+             xmlns:helpers="clr-namespace:VoluntariosApp.Helpers">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <helpers:ByteToImageFieldConverter x:Key="bic" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout>
+            <Label                                            
+                Text="Gestionar Postulaciones"
+                FontSize="Title"                
+                HorizontalOptions="Center"
+                FontFamily="MonReg"
+                TextColor="{StaticResource TextPrimary}"/>
+            <Label                                            
+                Text="{Binding OportunidadActividad}"
+                FontFamily="MonReg"
+                FontSize="Medium"         
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="{StaticResource TextPrimary}"/>
+            <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*,Auto,*,Auto,*,Auto,*">
+                <Label                                            
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="3"
+                    Text="Descripción"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                    
+                    TextColor="{StaticResource TextPrimary}"/>                
+                <Label                                            
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    Text="{Binding OportunidadDescripcion}"                    
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                    
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label                                            
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    Grid.ColumnSpan="3"
+                    Text="Rol"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                    
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label                                            
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="3"
+                    Text="{Binding OportunidadRol}"                    
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                    
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    Text="Localidad"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    Text="Provincia"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="2"
+                    Grid.Row="4"
+                    Text="Pais"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>                
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="5"
+                    Text="{Binding OportunidadLocalidadTipoLocalidad}"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="5"
+                    Text="{Binding OportunidadProvinciaNombreProvincia}"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="2"
+                    Grid.Row="5"
+                    Text="{Binding OportunidadPaisNombrePais}"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="6"
+                    Text="Entorno"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="6"
+                    Text="Intensidad"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="2"
+                    Grid.Row="6"
+                    Text="Social"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="0"
+                    Grid.Row="7"
+                    Text="{Binding OportunidadEntornoTipoEntorno}"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="1"
+                    Grid.Row="7"
+                    Text="{Binding OportunidadIntensidadTipoIntensidad}"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+                <Label
+                    Grid.Column="2"
+                    Grid.Row="7"
+                    Text="{Binding OportunidadSocialTipoSocial}"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="MonReg"
+                    FontSize="Medium"                                                        
+                    TextColor="{StaticResource TextPrimary}"/>
+            </Grid>            
+            <Label                                            
+                Text="Fecha de Inicio"
+                FontAttributes="Bold"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,10"/>
+            <Label                                            
+                Text="{Binding OportunidadFechaInicio, StringFormat='{0:dd MMMM yyyy}'}"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,0"/>
+            <Label                                            
+                Text="Fecha de Finalización"
+                FontAttributes="Bold"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,10"/>
+            <Label                                            
+                Text="{Binding OportunidadFechaFin, StringFormat='{0:dd MMMM yyyy}'}"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,0"/>
+            <Label                                            
+                Text="Fecha de Postulación"
+                FontAttributes="Bold"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,10"/>
+            <Label                                            
+                Text="{Binding FechaPostulacion, StringFormat='{0:dd MMMM yyyy}'}"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,0"/>
+            <Label                                            
+                Text="Mensaje"
+                FontAttributes="Bold"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,10"/>
+            <Label
+                x:Name="txtMensaje"
+                Text="{Binding Mensaje}"                
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,0"/>
+            <Label                                            
+                Text="Estado de Postulación"
+                FontAttributes="Bold"
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,10"/>
+            <Label
+                Text="{Binding EstadopostulacionEstado}"                
+                FontFamily="MonReg"
+                FontSize="Medium"                                                        
+                TextColor="{StaticResource TextPrimary}"
+                Margin="10,0,0,20"/>
+            <Button x:Name="buttonCancelar"
+                Text="CANCELAR POSTULACIÓN"                
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="{StaticResource Primary}"
+                Clicked="OnCancelButtonClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

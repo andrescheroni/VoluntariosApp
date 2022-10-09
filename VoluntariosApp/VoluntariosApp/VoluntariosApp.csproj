@@ -13,6 +13,11 @@
     <None Remove="Resources\Fonts\Montserrat-Light.ttf" />
     <None Remove="Resources\Fonts\Montserrat-LightItalic.ttf" />
     <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
+    <None Remove="Resources\Images\aceptada.png" />
+    <None Remove="Resources\Images\buscar.png" />
+    <None Remove="Resources\Images\noimage.png" />
+    <None Remove="Resources\Images\pendiente.png" />
+    <None Remove="Resources\Images\rechazada.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +28,11 @@
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Light.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-LightItalic.ttf" />
     <EmbeddedResource Include="Resources\Fonts\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Resources\Images\aceptada.png" />
+    <EmbeddedResource Include="Resources\Images\buscar.png" />
+    <EmbeddedResource Include="Resources\Images\noimage.png" />
+    <EmbeddedResource Include="Resources\Images\pendiente.png" />
+    <EmbeddedResource Include="Resources\Images\rechazada.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,25 +47,48 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Resources\Images\" />
-    <Folder Include="Services\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Controls\OportunidadesActivasControl.xaml.cs">
-      <DependentUpon>OportunidadesActivasControl.xaml</DependentUpon>
+    <Resource Include="Resources\Images\buscar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Organizacion\OportunidadesPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Controls\OportunidadesActivasControl.xaml">
+    <EmbeddedResource Update="Views\Common\AcercaDePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Controls\OportunidadesFinalizadasControl.xaml">
+    <EmbeddedResource Update="Views\Common\LoadingPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\AcercaDePage.xaml">
+    <EmbeddedResource Update="Views\Common\LoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Common\PreLoginPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Models\OportunidadEditPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Organizacion\PerfilGeneralPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Organizacion\PerfilPreferenciasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Organizacion\PostulacionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VoluntarioListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\VoluntarioPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

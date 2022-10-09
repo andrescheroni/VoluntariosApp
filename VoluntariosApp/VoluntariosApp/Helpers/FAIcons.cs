@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace VoluntariosApp.Helpers
+﻿namespace VoluntariosApp.Helpers
 {
     /// <summary>
     /// The unicode values for all FontAwesome v6.1.1 icons.
